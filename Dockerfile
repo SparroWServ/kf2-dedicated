@@ -36,11 +36,11 @@ FROM build_stage AS bullseye-base
 
 # Switch to user
 USER steam
-WORKDIR ${HOMEDIR}
+WORKDIR /home/steam
 
 CMD ["bash", "entry.sh"]
 
 # Expose ports
 EXPOSE 7777/udp \
-        27015/udp \
-        8080/tcp
+       27015/udp \
+       8080/tcp
