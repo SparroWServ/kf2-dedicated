@@ -41,6 +41,6 @@ WORKDIR /home/steam
 CMD ["bash", "entry.sh"]
 
 # Expose ports
-EXPOSE 7777/udp \
-       27015/udp \
+EXPOSE 7779/udp \
+       27017/udp \
        8080/tcp
